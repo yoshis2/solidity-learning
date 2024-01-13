@@ -1,3 +1,5 @@
 .deps
 .git
 
+contracts/artifacts
+tutorial/artifacts
