@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "ethers": "^6.10.0",
+    "hardhat": "^2.19.4",
+    "remix": "^2.5.0",
+    "web3": "^4.3.0",
+    "web3-eth-contract": "^4.1.4"
+  }
+}

@@ -1,28 +1,32 @@
 REMIX DEFAULT WORKSPACE
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+Remixのデフォルトのワークスペースが存在する場合：
+i. Remixが初めてロードされたとき 
+ii. 新しいワークスペースが'Default'テンプレートで作成される。
+iii. ファイルエクスプローラーにファイルはありません。
 
-This workspace contains 3 directories:
+このワークスペースには3つのディレクトリがあります：
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+1. contract'： 複雑さを増す3つの契約を保持する。
+2. scripts'： コントラクトをデプロイするための4つのタイプスクリプトファイルが格納されている。以下に説明する。
+3. 'tests'： Ballot' コントラクト用の Solidity テストファイルと 'Storage' コントラクト用の JS テストファイルが含まれます。
 
-SCRIPTS
+スクリプト
 
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
+scripts'フォルダには、'web3.js'と'ethers.js'ライブラリを使用して'Storage'コントラクトをデプロイするのに役立つ4つのtypescriptファイルがあります。
 
-For the deployment of any other contract, just update the contract's name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
+他のコントラクトをデプロイするには、コントラクトの名前を'Storage'から目的のコントラクトに変更し、コンストラクタの引数を指定します。
+ファイル `deploy_with_ethers.ts` または `deploy_with_web3.ts` に記述します。
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+tests' フォルダには 'Storage' コントラクト用の Mocha-Chai ユニットテストを含むスクリプトがある。
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
+スクリプトを実行するには、ファイルエクスプローラーでファイル名を右クリックし、'Run' をクリックします。Solidity ファイルは既にコンパイルされている必要があります。
+スクリプトからの出力はリミックスターミナルに表示されます。
 
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+
+なお、require/importはRemixがサポートしているモジュールに対して限定的にサポートされています。
+今のところ、Remixがサポートしているモジュールは、ethers、web3、swarmgw、chai、multihashes、remix、そしてhardhat.ethers object/pluginのみです。
+サポートされていないモジュールの場合、次のようなエラーが表示されます: '<モジュール名> module require is not supported by Remix IDE'。
+
+
+
