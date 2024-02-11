@@ -17,7 +17,7 @@ contract StructContract {
         Dog memory newDog = Dog(_name,_owner,id);
         dogs.push(newDog);
 
-        ownerToDog[_owner];
+        ownerToDog[_owner].push(id);
     }
 
     function getDog(address _owner) public view returns (string[] memory){
