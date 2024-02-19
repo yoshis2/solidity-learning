@@ -3,4 +3,5 @@
 
 contracts/artifacts
 tutorial/artifacts
+tests/artifacts
 node_modules
